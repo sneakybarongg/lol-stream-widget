@@ -3,9 +3,31 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-business-frontpage/blob/master/LICENSE)
  */
-body {
-  padding-top: 56px;
-}
+ .bg-rift {
+    background-color: #273542!important
+ }
 .bg-purple {
   background-color: #7d5bbe
+}
+
+.main-nav {
+  box-shadow: $box-shadow;
+  background-color: #20232a;
+}
+.main-navbar {
+  box-shadow: $box-shadow;
+  background-color: #20232a;
+}
+
+.logo {
+  max-height: 4rem!important;
+  font-size: 2rem!important;
+  font-weight: lighter;
+}
+
+.text-blue-new{
+  color: #0099CC;
+}
+.bg-dark-new{
+  background-color: #20232a;
 }
