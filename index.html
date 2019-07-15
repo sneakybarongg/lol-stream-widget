@@ -1,34 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-
   <title>Sneaky Live - Poderoso complemento para streamers</title>
-
-  <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
   <link href="css/business-frontpage.css" rel="stylesheet">
-
 </head>
-
 <body>
-
-  <!-- Navigation -->
   <nav class="navbar bg-dark-new navbar-expand-lg text-light">
     <div class="container">
       <h1 class="logo js-scroll-trigger"> Sneaky<b class="text-blue-new">LIVE</b></h1>
       <div>Powered by <a href="https://www.sneakybaron.gg"><img src="./assets/logo_letras.png" width="200" class="" alt="Sb logo leters"/></a></div>
     </div>
   </nav>
-
-  <!-- Header -->
   <header class="bg-light py-5 mb-5 bg-rift">
     <div class="container h-100">
       <div class="row h-100 align-items-center">
@@ -42,27 +29,20 @@
       </div>
     </div>
   </header>
-
-  <!-- Page Content -->
   <div class="container">
-
     <div class="mb-4 text-center">
         <h1 class="display-4">Obten tu widget para tu stream</h2>
         <hr>
-        <form class="col col-lg-8 offset-lg-2" action="" method="post">
-          <div class="form-group">
-            <label for="exampleInputEmail1">Direccion de E-Mail</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Ingrese su direccion de e-mail">
-          </div>
+        <form class="col col-lg-8 offset-lg-2" action="https://api.sneakybaron.gg/api/new-widget/" method="post">
           <div class="form-group">
             <label for="summonerName">Nombre de invocador</label>
-            <input type="text" class="form-control" id="summonerName" placeholder="Ingrese su nombre de invocador">
+            <input type="text" name="summoner-name" class="form-control" id="summonerName" placeholder="Ingrese su nombre de invocador">
           </div>
           <div class="form-row">
             <div class="form-col">
               <div class="form-group">
                 <label for="regionControl">Region</label>
-                <select class="form-control" id="regionControl">
+                <select class="form-control" id="regionControl" name="region">
                   <option>LAS</option>
                   <option>LAN</option>
                   <option>NA</option>
@@ -79,30 +59,24 @@
               </div>
             </div>
           </div>
+          <div class="form-group">
+            <label for="emailInput">Direccion de E-Mail</label>
+            <input type="email" name="email" class="form-control" id="emailInput" placeholder="Ingrese su direccion de e-mail">
+          </div>
           <div class="form-group form-check">
-            <input type="checkbox" class="form-check-input" id="infoCheck">
-            <label class="form-check-label" for="infoCheck">Recibir informacion adicional sobre SneakyBaron</label>
+            <input type="checkbox" name="receive-info" class="form-check-input" id="infoCheck">
+            <label class="form-check-label" for="infoCheck">Deseo recibir actualizaciones de SneakyLIVE</label>
           </div>
           <button type="submit" class="btn btn-primary">Obtener</button>
         </form>
       </div>
     </div>
-
-      </div>
-  <!-- /.container -->
-
-  <!-- Footer -->
-  <footer class="py-5 bg-dark">
-    <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+  <footer class="page-footer font-small blue">
+    <div class="bg-dark-new footer-copyright-white text-center py-3">© 2019
+      <a href="https://www.sneakybaron.gg"> Sneakybaron.gg </a>
     </div>
-    <!-- /.container -->
   </footer>
-
-  <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
 </body>
-
 </html>
